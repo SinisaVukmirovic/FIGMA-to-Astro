@@ -9,7 +9,7 @@ ___
 
 #### To create a componet set, select elements and click on the create component set at the dropdown at the top of the screen (button on the left).
 
-####
+#### To add effects to an element, like blur effect, click the + next to a effects tool on the right panel, choose blur from the drop down and click on the sun icon on the right to enter values of the effect.
 
 ####
 
