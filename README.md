@@ -11,7 +11,7 @@ ___
 
 #### To add effects to an element, like blur effect, click the + next to a effects tool on the right panel, choose blur from the drop down and click on the sun icon on the right to enter values of the effect.
 
-####
+#### Simpleicons plugin has Brand icons.
 
 ####
 
