@@ -1,1 +1,31 @@
-sdcsd
+---
+import { Icon } from 'astro-icon';
+
+const navLinks = [
+  {
+    name: 'Home',
+    url: '/',
+    style: 'transparent',
+  },
+  {
+    name: 'Pricing',
+    url: '#',
+    style: 'transparent',
+  },
+  {
+    name: 'About',
+    url: '#',
+    style: 'transparent',
+  },
+  {
+    name: 'Contact Me',
+    url: '#',
+    style: 'primary',
+  },
+];
+---
+<nav>
+    <div class="container nav-container">
+        <Icon name="logo" class="logo" width={225} />
+    </div>
+</nav>

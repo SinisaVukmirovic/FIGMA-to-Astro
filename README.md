@@ -16,7 +16,7 @@ ___
 
 ### Astro notes
 
-####
+#### We will use BaseLayout in layouts folder for any page we build on our site
 
 ####
 
