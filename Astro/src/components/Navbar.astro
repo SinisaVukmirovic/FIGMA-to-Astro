@@ -28,4 +28,30 @@ const navLinks = [
     <div class="container nav-container">
         <Icon name="logo" class="logo" width={225} />
     </div>
+    <div class="nav-wrapper">
+        <button class="btn btn-menu" id="btnMenu" aria-expanded="false" aria-label="Open mobile nav">
+            <Icon name="feather:menu"width={25} />
+        </button>
+        <ul class="nav-links" role="navigation">
+            {navLinks.map(link => (
+                <li role="none">
+                    <a href={link.url} class=`nav-link btn btn-${link.style}`>{link.name}</a>    
+                </li>
+            ))}
+        </ul>
+    </div>
 </nav>
+
+<style>
+    nav {
+        background-color: #999;
+    }
+</style>
+
+<script>
+    const btnMenu = document.querySelector('#btnMenu');
+
+    btnMenu.addEventListener('click', () => {
+        btnMenu.setAttribute('aria-expanded', btnMenu.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
+    });
+</script>
