@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+:root {
+    --bkg: hsl(222 47.4% 11.2%);
+    --bkg-alt: hsl(226 58.3% 18.8%);
+    --text: hsl(226 100% 93.9%);
+    --text-alt: hsl(226 22.1% 73.3%);
+    --muted: hsl(230 39% 67.8%);
+    --white: hsl(255 100% 100%);
+    --accent1: hsl(241 76.8% 62.7%);
+    --accent2: hsl(330 85.2% 60.4%);
+    --accent3: hsl(0 90.6% 70.8%);
+    --gradient: linear-gradient(
+      94.55deg, (var(--accent2)) -4.6%,
+      (var(--accent3)) 99.9%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture, 
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+      font-size: 130%;
+    }
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    max-width: 2000px;
+    margin: auto;
+    background-color: var(--bkg);
+    color: hsl(var(--text));
+  }

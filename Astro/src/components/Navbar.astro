@@ -35,18 +35,12 @@ const navLinks = [
         <ul class="nav-links" role="navigation">
             {navLinks.map(link => (
                 <li role="none">
-                    <a href={link.url} class=`nav-link btn btn-${link.style}`>{link.name}</a>    
+                    <a href={link.url} class={`nav-link btn btn-${link.style}`}>{link.name}</a>    
                 </li>
             ))}
         </ul>
     </div>
 </nav>
-
-<style>
-    nav {
-        background-color: #999;
-    }
-</style>
 
 <script>
     const btnMenu = document.querySelector('#btnMenu');

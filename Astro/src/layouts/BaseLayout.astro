@@ -16,6 +16,8 @@ const { title = "This is a page" } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<!-- Local -->
+		<link rel="stylesheet" href="./src/css/global.css" />
 	</head>
 	<body>
         <Navbar />
@@ -33,14 +35,14 @@ const { title = "This is a page" } = Astro.props;
 		--accent: 124, 58, 237;
 		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
 	}
-	html {
+	/* html {
 		font-family: system-ui, sans-serif;
 		background-color: #F6F6F6;
-	}
-    body {
+	} */
+    /* body {
         display: grid;
         place-items: center;
-    }
+    } */
 </style>
 
 <script>
