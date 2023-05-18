@@ -18,9 +18,17 @@ ___
 
 #### We will use BaseLayout in layouts folder for any page we build on our site
 
-####
+#### To use template literals in Astro, wrap it in { }
+<code><pre>
+    <a href={link.url} class={`nav-link btn btn-${link.style}`}>{link.name}</a>    
+</pre></code>
 
-####
+#### Setting max width for the body for very wide monitors
+<code><pre>
+  body {
+    max-width: 2000px;
+  }
+</pre></code>
 
 ####
 
