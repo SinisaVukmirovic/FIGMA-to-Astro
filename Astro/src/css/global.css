@@ -1,18 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
 :root {
-    --bkg: hsl(222 47.4% 11.2%);
-    --bkg-alt: hsl(226 58.3% 18.8%);
-    --text: hsl(226 100% 93.9%);
-    --text-alt: hsl(226 22.1% 73.3%);
-    --muted: hsl(230 39% 67.8%);
-    --white: hsl(255 100% 100%);
-    --accent1: hsl(241 76.8% 62.7%);
-    --accent2: hsl(330 85.2% 60.4%);
-    --accent3: hsl(0 90.6% 70.8%);
-    --gradient: linear-gradient(
-      94.55deg, (var(--accent2)) -4.6%,
-      (var(--accent3)) 99.9%);
+  --bkg: 222 47.4% 11.2%;
+  --bkg-alt: 226 58.3% 18.8%;
+  --text: 226 100% 93.9%;
+  --text-alt: 226 22.1% 73.3%;
+  --muted: 230 39% 67.8%;
+  --white: 255 100% 100%;
+  --accent1: 241 76.8% 62.7%;
+  --accent2: 330 85.2% 60.4%;
+  --accent3: 0 90.6% 70.8%;
+  --gradient: linear-gradient(
+    94.55deg, (var(--accent2)) -4.6%,
+    (var(--accent3)) 99.9%);
+
+    /* vars instead of using Open Props */
+  --size-fluid-5: clamp(5rem, 7vw, 7.5rem);
+  --size-fluid-2: clamp(1.5rem, 3vw, 2.5rem);
+
+  --font-size-fluid-0: clamp(.75rem, 1.5vw, 1rem);
+  --font-size-fluid-1: clamp(1rem, 2vw, 1.5rem);
+  --font-size-fluid-2: clamp(1.5rem, 3vw, 2.5rem);
+  --font-size-fluid-3: clamp(2rem, 4vw, 3.5rem);
+  --font-size-00: .5rem;
+
+  --size-fluid-1: clamp(.5rem, 1vw, 1rem);
+  /* --size-fluid-2: clamp(1rem, 2vw, 1.5rem); */
+  --size-fluid-3: clamp(1.5rem, 3vw, 2rem);
 }
 
 *,
@@ -42,6 +56,183 @@ svg {
     line-height: 1.55;
     max-width: 2000px;
     margin: auto;
-    background-color: var(--bkg);
+    background-color: hsl(var(--bkg));
     color: hsl(var(--text));
   }
+
+.wrapper {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  gap: var(--size-fluid-5);
+  padding: var(--size-fluid-5) var(--size-fluid-2);
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.container-sm {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-xs {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* UTILS */
+
+.text-bkg {
+  color: hsl(var(--bkg));
+}
+.text-bkg-alt {
+  color: hsl(var(--bkg-alt));
+}
+.text-text {
+  color: hsl(var(--text));
+}
+.text-text-alt {
+  color: hsl(var(--text-alt));
+}
+.text-muted {
+  color: hsl(var(--muted));
+}
+.text-white {
+  color: hsl(var(--white));
+}
+.text-accent1 {
+  color: hsl(var(--accent1));
+}
+.text-accent2 {
+  color: hsl(var(--accent2));
+}
+.text-accent3 {
+  color: hsl(var(--accent3));
+}
+.text-gradient {
+  color: transparent;
+  background: var(--gradient);
+  background-clip: text;
+}
+
+.h1 {
+  font-size: var(--font-size-fluid-3);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h2 {
+  font-size: var(--font-size-fluid-2);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h3 {
+  font-size: var(--font-size-fluid-1);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+small {
+  font-size: var(--font-size-00);
+}
+
+.grid-sm {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-1);
+}
+
+.grid-md {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-3);
+}
+
+.grid-lg {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: var(--size-fluid-3);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.narrow {
+  max-width: 80ch;
+}
+
+/* font sizes */
+.h1 {
+  font-size: var(--font-size-fluid-3);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h2 {
+  font-size: var(--font-size-fluid-2);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h3 {
+  font-size: var(--font-size-fluid-1);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+small {
+  font-size: var(--font-size-00);
+}
+
+/* grids */
+
+.grid-sm {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-1);
+}
+
+.grid-md {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-3);
+}
+
+.grid-lg {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: var(--size-fluid-3);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.narrow {
+  max-width: 80ch;
+}
