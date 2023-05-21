@@ -11,8 +11,10 @@
   --accent2: 330 85.2% 60.4%;
   --accent3: 0 90.6% 70.8%;
   --gradient: linear-gradient(
-    94.55deg, (var(--accent2)) -4.6%,
-    (var(--accent3)) 99.9%);
+    94.55deg,
+    hsl(var(--accent2)) -4.6%,
+    hsl(var(--accent3)) 99.9%
+  );
 
     /* vars instead of using Open Props */
   --size-fluid-5: clamp(5rem, 7vw, 7.5rem);
