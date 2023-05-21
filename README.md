@@ -40,5 +40,6 @@ ___
 
 ####
 
-####
+### SideNote 
+#### Using filter property affects performance. Don't go crazy with it!
 
