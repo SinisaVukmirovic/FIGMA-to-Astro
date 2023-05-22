@@ -410,7 +410,7 @@ header {
 }
 
 .service--icon {
-  background-color: hsl(var(--muted));
+  background-color: hsl(var(--accent2));
   justify-self: start;
   padding: clamp(0.6rem, 3vw, .8rem);
   border-radius: 50%;
