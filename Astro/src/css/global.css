@@ -633,12 +633,11 @@ footer {
   display: grid;
   place-items: center;
   padding: var(--size-2);
-  background-color: hsl(var(--bkg));
+  background-color: hsl(var(--accent1) / 30%);
   color: hsl(var(--text-alt));
-  /* overflow: hidden; */
 }
 
-footer::after,
+/* footer::after,
 footer::before {
   height: 100px;
-}
+} */
