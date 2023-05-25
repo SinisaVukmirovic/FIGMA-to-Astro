@@ -543,7 +543,6 @@ header {
 }
 
 .pricing-card.featured {
-  border-color: lime;
   position: relative;
 }
 
@@ -559,13 +558,6 @@ header {
   border-radius: var(--size-2);
   padding: 0 var(--size-2);
 }
-
-/* .pricing-card p {
-  font-size: .9rem;
-}
-.pricing-card span {
-  font-size: .8rem;
-} */
 
 @media screen and (min-width: 1075px) {
   .pricing-card.featured {
@@ -643,6 +635,7 @@ footer {
   padding: var(--size-2);
   background-color: hsl(var(--bkg));
   color: hsl(var(--text-alt));
+  /* overflow: hidden; */
 }
 
 footer::after,
