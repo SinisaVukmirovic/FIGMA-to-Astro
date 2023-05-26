@@ -250,7 +250,7 @@ small {
 }
 
 .narrow {
-  max-width: 80ch;
+  max-width: 60ch;
 }
 
 /* components */
@@ -623,7 +623,10 @@ header {
   text-align: center;
 }
 
-.cta .narrow {
+/* .cta .narrow {
+  max-width: var(--size-content-3);
+} */
+.cta {
   max-width: var(--size-content-3);
 }
 
@@ -633,11 +636,11 @@ footer {
   display: grid;
   place-items: center;
   padding: var(--size-2);
-  background-color: hsl(var(--accent1) / 30%);
+  background-color: hsl(var(--bkg));
   color: hsl(var(--text-alt));
 }
 
-/* footer::after,
+footer::after,
 footer::before {
   height: 100px;
-} */
+}
